@@ -1,4 +1,4 @@
-package by.mygroup.shape;
+package by.mygroup.shape.cube;
 
 public abstract class Shape {
     private long id;
@@ -23,5 +23,9 @@ public abstract class Shape {
 
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

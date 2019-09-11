@@ -1,6 +1,6 @@
-package by.mygroup.shape;
+package by.mygroup.shape.cube;
 
-public enum CubePoints {
+public enum CubePoint {
     DOWN_LEFT_1,
     DOWN_LEFT_2,
     DOWN_RIGHT_1,

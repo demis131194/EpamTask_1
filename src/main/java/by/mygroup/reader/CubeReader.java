@@ -1,5 +1,7 @@
 package by.mygroup.reader;
 
+import by.mygroup.exception.CubeReaderException;
+import by.mygroup.shape.cube.Cube;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -17,15 +19,15 @@ public class CubeReader {
     private static final String PATH_CUBES = new File("").getAbsolutePath() + "\\src\\main\\resources\\shapes\\cubes.txt";
 
 
-    public static List<String> readLines() {
+    public static List<String> readLines() throws CubeReaderException {
         logger.info("Starting reading lines from cube.txt");
 
         List<String> lines = null;
         try (Stream<String> stringStream = Files.lines(Paths.get(PATH_CUBES))) {
             lines = stringStream.collect(Collectors.toList());
         } catch (IOException e) {    // FIXME: 11.09.2019
-            logger.warn("Some IO Exception in reading. Returned empty list!");
-            lines = Collections.emptyList();
+            logger.error("Some IO Exception in reading.");
+            throw new CubeReaderException("Some IO Exception in reading.", e);
         }
 
         logger.info("Reading file cube.txt completed.");

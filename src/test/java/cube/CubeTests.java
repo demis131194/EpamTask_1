@@ -1,11 +1,14 @@
 package cube;
 
 import by.mygroup.exception.CubeException;
+import by.mygroup.exception.CubeParseException;
+import by.mygroup.exception.CubeReaderException;
+import by.mygroup.shape.cube.CubeArgumentContainer;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import by.mygroup.shape.Cube;
-import by.mygroup.shape.Point;
+import by.mygroup.shape.cube.Cube;
+import by.mygroup.shape.cube.Point;
 import by.mygroup.factory.CubeFactory;
 import by.mygroup.parser.CubeParser;
 import by.mygroup.reader.CubeReader;
@@ -32,40 +35,39 @@ public class CubeTests {
     }
 
     @Test
-    public void readCubeFileTest() {
+    public void readCubeFileTest() throws CubeReaderException {
         List<String> readingLinesFromCube = CubeReader.readLines();
         Assert.assertEquals(readingLinesFromCube, linesFromCubeFile);
     }
 
     @Test
-    public void parseArgumentsTest() {
-        CubeParser cubeParser = CubeParser.getInstance();
-        cubeParser.parse(linesFromCubeFile.get(0));
-        Assert.assertEquals(cubeParser.getStartPoint(), startPointForCube_1);
-        Assert.assertEquals(cubeParser.getCubeEdge(), cube_edge_1);
-        Assert.assertEquals(cubeParser.getCubeEdge(), cube_edge_1);
-        Assert.assertEquals(cubeParser.getId(), cube_id_1);
+    public void parseArgumentsTest() throws CubeParseException {
+        CubeArgumentContainer container = CubeParser.parse(linesFromCubeFile.get(0));
+        Assert.assertEquals(container.getStartPoint(), startPointForCube_1);
+        Assert.assertEquals(container.getCubeEdge(), cube_edge_1);
+        Assert.assertEquals(container.getCubeEdge(), cube_edge_1);
+        Assert.assertEquals(container.getId(), cube_id_1);
     }
 
     @Test
-    public void cubeCreateTest() {
+    public void cubeCreateTest() throws CubeException, CubeParseException {
         CubeFactory cubeFactory = new CubeFactory();
         Cube expectedCube = new Cube(startPointForCube_1, cube_edge_1);
-        Cube cube = cubeFactory.create(linesFromCubeFile.get(0));
+        Cube cube = cubeFactory.create(CubeParser.parse(linesFromCubeFile.get(0)));
         Assert.assertEquals(cube, expectedCube);
     }
 
     @Test(expectedExceptions = CubeException.class)
-    public void cubeCreateTestNotCubeException() {
+    public void cubeCreateTestNotCubeException() throws CubeException, CubeParseException {
         CubeFactory cubeFactory = new CubeFactory();
         Cube expectedCube = new Cube(startPointForCube_1, cube_edge_1);
-        Cube cube = cubeFactory.create(linesFromCubeFile.get(1));
+        Cube cube = cubeFactory.create(CubeParser.parse(linesFromCubeFile.get(1)));
     }
 
     @Test(expectedExceptions = CubeException.class)
-    public void cubeCreateTestLengthOfCubeException() {
+    public void cubeCreateTestLengthOfCubeException() throws CubeParseException, CubeException {
         CubeFactory cubeFactory = new CubeFactory();
         Cube expectedCube = new Cube(startPointForCube_1, cube_edge_1);
-        Cube cube = cubeFactory.create(linesFromCubeFile.get(1));
+        Cube cube = cubeFactory.create(CubeParser.parse(linesFromCubeFile.get(2)));
     }
 }

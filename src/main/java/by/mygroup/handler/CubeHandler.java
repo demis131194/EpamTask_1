@@ -2,9 +2,9 @@ package by.mygroup.handler;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import by.mygroup.shape.Cube;
-import by.mygroup.shape.CubePoints;
-import by.mygroup.shape.Point;
+import by.mygroup.shape.cube.Cube;
+import by.mygroup.shape.cube.CubePoint;
+import by.mygroup.shape.cube.Point;
 
 import java.util.Map;
 
@@ -29,19 +29,19 @@ public class CubeHandler {
     }
 
     public static double calculateSectionByCoordinatePlane(Cube cube, CoordinatePlane coordinatePlane) {
-        Map<CubePoints, Point> cubePoints = cube.getCubePoints();
+        Map<CubePoint, Point> cubePoints = cube.getCubePoints();
         double firstPoint;
         double secondPoint;
 
         logger.info(String.format("Calculate Section By CoordinatePlane Cube id = %d, plane = %s", cube.getId(), coordinatePlane.toString()));
         switch (coordinatePlane) {
             case X:
-                firstPoint = cubePoints.get(CubePoints.DOWN_LEFT_1).getY();
-                secondPoint = cubePoints.get(CubePoints.DOWN_LEFT_2).getY();
+                firstPoint = cubePoints.get(CubePoint.DOWN_LEFT_1).getY();
+                secondPoint = cubePoints.get(CubePoint.DOWN_LEFT_2).getY();
                 return calculateRatio(firstPoint, secondPoint);
             case Y:
-                firstPoint = cubePoints.get((CubePoints.DOWN_LEFT_1)).getX();
-                secondPoint = cubePoints.get(CubePoints.DOWN_RIGHT_1).getX();
+                firstPoint = cubePoints.get((CubePoint.DOWN_LEFT_1)).getX();
+                secondPoint = cubePoints.get(CubePoint.DOWN_RIGHT_1).getX();
                 return calculateRatio(firstPoint, secondPoint);
             default:
                 throw new RuntimeException("Incorrect coordinate plane!");

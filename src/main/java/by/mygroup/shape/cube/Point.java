@@ -1,4 +1,4 @@
-package by.mygroup.shape;
+package by.mygroup.shape.cube;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

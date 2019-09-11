@@ -1,25 +1,21 @@
 package by.mygroup.factory;
 
+import by.mygroup.exception.CubeException;
+import by.mygroup.shape.cube.CubeArgumentContainer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import by.mygroup.shape.Cube;
+import by.mygroup.shape.cube.Cube;
 import by.mygroup.parser.CubeParser;
 
-public class CubeFactory extends ShapeFactory {
+public class CubeFactory {
     private static final Logger logger = LogManager.getLogger();
 
     public CubeFactory() {
         logger.info("Cube factory created.");
     }
 
-    @Override
-    public Cube create(String arguments) {
-        CubeParser parser = CubeParser.getInstance();
-        parser.parse(arguments);
-        if (parser.getStartPoint() == null) {
-            return new Cube(parser.getId(), parser.getPoints());
-        } else {
-            return new Cube(parser.getId(), parser.getStartPoint(), parser.getCubeEdge());
-        }
+    public Cube create(CubeArgumentContainer container) throws CubeException {
+        return new Cube(container.getId(), container.getStartPoint(), container.getCubeEdge());
     }
+
 }
