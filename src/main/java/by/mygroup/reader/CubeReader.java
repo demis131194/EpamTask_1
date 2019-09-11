@@ -16,17 +16,17 @@ import java.util.stream.Stream;
 
 public class CubeReader {
     private static final Logger logger = LogManager.getLogger();
-    private static final String PATH_CUBES = "../epam_task/src/main/resources/shapes/cubes.txt";
+    private static final String PATH_CUBES = "..s/epam_task/src/main/resources/shapes/cubes.txt";
 
 
     public static List<String> readLines() throws CubeReaderException {
         logger.info("Starting reading lines from cube.txt");
 
-        List<String> lines = null;
+        List<String> lines;
         try (Stream<String> stringStream = Files.lines(Paths.get(PATH_CUBES))) {
             lines = stringStream.collect(Collectors.toList());
-        } catch (IOException e) {    // FIXME: 11.09.2019
-            logger.error(e.getMessage());
+        } catch (IOException e) {
+            logger.error(e.toString());
             throw new CubeReaderException(e);
         }
 

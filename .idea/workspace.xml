@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="">
+    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task part 1, fix CubeReader.">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Demis_PC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cube/CubeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cube/CubeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cube/CubeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cube/CubeTests.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +41,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -171,6 +170,14 @@
       <updated>1568120307638</updated>
       <workItem from="1568120315048" duration="38293000" />
     </task>
+    <task id="LOCAL-00001" summary="Epam task part 1, fix CubeReader.">
+      <created>1568203570012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568203570012</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,5 +196,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Epam task part 1, fix CubeReader." />
+    <option name="LAST_COMMIT_MESSAGE" value="Epam task part 1, fix CubeReader." />
   </component>
 </project>

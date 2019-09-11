@@ -490,3 +490,18 @@
 2019-09-11 15:03:04 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1933148157, x=23.2, y=54.2, z=1.0}
 2019-09-11 15:03:04 | [main] | INFO  reader.CubeReader (CubeReader.java:24) - Starting reading lines from cube.txt
 2019-09-11 15:03:04 | [main] | INFO  reader.CubeReader (CubeReader.java:34) - Reading file cube.txt completed.
+2019-09-11 15:03:21 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
+2019-09-11 15:03:21 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1933148157, x=23.2, y=54.2, z=1.0}
+2019-09-11 15:03:21 | [main] | INFO  reader.CubeReader (CubeReader.java:24) - Starting reading lines from cube.txt
+2019-09-11 15:03:21 | [main] | ERROR reader.CubeReader (CubeReader.java:30) - .\epam_task\src\main\resources\shapes\cubes.txt
+2019-09-11 15:06:28 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
+2019-09-11 15:06:28 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1933148157, x=23.2, y=54.2, z=1.0}
+2019-09-11 15:06:28 | [main] | INFO  reader.CubeReader (CubeReader.java:23) - Starting reading lines from cube.txt
+2019-09-11 15:06:28 | [main] | INFO  reader.CubeReader (CubeReader.java:33) - Reading file cube.txt completed.
+2019-09-11 15:06:37 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
+2019-09-11 15:06:37 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1933148157, x=23.2, y=54.2, z=1.0}
+2019-09-11 15:06:37 | [main] | INFO  reader.CubeReader (CubeReader.java:23) - Starting reading lines from cube.txt
+2019-09-11 15:06:37 | [main] | ERROR reader.CubeReader (CubeReader.java:29) - ..s\epam_task\src\main\resources\shapes\cubes.txt
+2019-09-11 15:08:00 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
+2019-09-11 15:08:00 | [main] | INFO  cube.Point (Point.java:18) - Point created! Point :Point{id=-1933148157, x=23.2, y=54.2, z=1.0}
+2019-09-11 15:08:00 | [main] | INFO  reader.CubeReader (CubeReader.java:23) - Starting reading lines from cube.txt
