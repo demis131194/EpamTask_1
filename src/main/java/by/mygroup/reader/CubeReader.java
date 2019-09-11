@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 public class CubeReader {
     private static final Logger logger = LogManager.getLogger();
-    private static final String PATH_CUBES = "..s/epam_task/src/main/resources/shapes/cubes.txt";
+    private static final String PATH_CUBES = "../epam_task/src/main/resources/shapes/cubes.txt";
 
 
     public static List<String> readLines() throws CubeReaderException {
