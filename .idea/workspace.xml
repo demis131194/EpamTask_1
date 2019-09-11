@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="" />
+    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cube/CubeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cube/CubeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cube/CubeTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cube/CubeTests.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,10 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,21 +38,27 @@
     </option>
   </component>
   <component name="ProjectId" id="1Qe9gbW4uZdrAbKbeN4JryL79pU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources\shapes" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="by.mygroup.exception" />
       <recent name="exceptions" />
     </key>
   </component>
@@ -54,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CubeTests">
+  <component name="RunManager" selected="TestNG.CubeTests.readCubeFileTest">
     <configuration name="Cube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mygroup.exceptions.shape.Cube" />
       <module name="epam_task" />
@@ -131,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CubeTests" />
         <item itemvalue="TestNG.CubeTests.readCubeFileTest" />
+        <item itemvalue="TestNG.CubeTests" />
         <item itemvalue="Application.Cube" />
         <item itemvalue="Application.CubeReader" />
         <item itemvalue="Application.CubeParser" />
@@ -158,5 +178,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

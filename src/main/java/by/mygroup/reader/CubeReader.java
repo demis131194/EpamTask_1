@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 public class CubeReader {
     private static final Logger logger = LogManager.getLogger();
-    private static final String PATH_CUBES = new File("").getAbsolutePath() + "\\src\\main\\resources\\shapes\\cubes.txt";
+    private static final String PATH_CUBES = "../epam_task/src/main/resources/shapes/cubes.txt";
 
 
     public static List<String> readLines() throws CubeReaderException {
@@ -26,8 +26,8 @@ public class CubeReader {
         try (Stream<String> stringStream = Files.lines(Paths.get(PATH_CUBES))) {
             lines = stringStream.collect(Collectors.toList());
         } catch (IOException e) {    // FIXME: 11.09.2019
-            logger.error("Some IO Exception in reading.");
-            throw new CubeReaderException("Some IO Exception in reading.", e);
+            logger.error(e.getMessage());
+            throw new CubeReaderException(e);
         }
 
         logger.info("Reading file cube.txt completed.");
