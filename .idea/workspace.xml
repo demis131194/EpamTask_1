@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/CubeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/specification/Specification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/handler/CubeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/handler/CubeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/handler/CubeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/handler/CubeHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -207,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568366296562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Epam task part 2, add Test for CubeHandler&#10;.">
+      <created>1568388119206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568388119206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,17 +249,7 @@
     <MESSAGE value="Epam task part 1, fix CubeReader (2)." />
     <MESSAGE value="Epam task part 1, change log config, some fix." />
     <MESSAGE value="Epam task part 2, add Warehouse and observers." />
-    <option name="LAST_COMMIT_MESSAGE" value="Epam task part 2, add Warehouse and observers." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cube/CubeHandlerTests.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Epam task part 2, add Test for CubeHandler&#10;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Epam task part 2, add Test for CubeHandler&#10;." />
   </component>
 </project>
