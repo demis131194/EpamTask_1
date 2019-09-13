@@ -8,14 +8,14 @@ public class Point {
     private double x;
     private double y;
     private double z;
-    private long id = 0;
+    private long id;
 
     public Point(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
         id = hashCode();
-        logger.info("Point created! Point :" + this.toString());
+        logger.info("Create :" + this.toString());
     }
 
     public Point(double x, double y) {

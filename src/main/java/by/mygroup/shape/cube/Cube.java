@@ -16,7 +16,7 @@ public class Cube extends Shape {
         this.cubeEdge = cubeEdge;
         calculatePoints(startPoint, cubeEdge);
         super.setId(CubeIdGenerator.generateID(this));
-        logger.info("Create cube: " + this.toString());
+        logger.info("Create : " + this.toString());
     }
 
     public Cube(long id, Point startPoint, double cubeEdge) throws CubeException {
@@ -44,7 +44,6 @@ public class Cube extends Shape {
         if (super.getId() != id) {
             throw new CubeException("This is not a cube!");
         }
-        logger.info("Create cube: " + this.toString());
     }
 
     @SuppressWarnings("all")
@@ -94,5 +93,9 @@ public class Cube extends Shape {
         sb.append(", cubePoints=").append(cubePoints);
         sb.append('}');
         return sb.toString();
+    }
+
+    public static void main(String[] args) throws Exception {
+        Cube cube = new Cube(new Point(1, 1), 3.2);
     }
 }

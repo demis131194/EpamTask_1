@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task part 1, fix CubeReader.">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Demis_PC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task part 1, change log config, some fix.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Cube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,18 +51,20 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources\shapes" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="by.mygroup.exception" />
       <recent name="exceptions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources" />
+      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task" />
+      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources\shapes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -73,13 +79,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CubeTests.readCubeFileTest">
-    <configuration name="Cube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mygroup.exceptions.shape.Cube" />
+  <component name="RunManager" selected="Application.Cube (1)">
+    <configuration name="Cube (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.mygroup.shape.cube.Cube" />
       <module name="epam_task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mygroup.exceptions.shape.*" />
+          <option name="PATTERN" value="by.mygroup.shape.cube.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CubeParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.mygroup.parser.CubeParser" />
+    <configuration name="Cube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mygroup.exceptions.shape.Cube" />
       <module name="epam_task" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.mygroup.parser.*" />
+          <option name="PATTERN" value="mygroup.exceptions.shape.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CubeTests.readCubeFileTest" />
+        <item itemvalue="Application.Cube (1)" />
         <item itemvalue="TestNG.CubeTests" />
+        <item itemvalue="TestNG.CubeTests.readCubeFileTest" />
         <item itemvalue="Application.Cube" />
         <item itemvalue="Application.CubeReader" />
-        <item itemvalue="Application.CubeParser" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +175,9 @@
       <option name="presentableId" value="Default" />
       <updated>1568120307638</updated>
       <workItem from="1568120315048" duration="38293000" />
+      <workItem from="1568281730956" duration="783000" />
+      <workItem from="1568287085962" duration="11302000" />
+      <workItem from="1568362768850" duration="3513000" />
     </task>
     <task id="LOCAL-00001" summary="Epam task part 1, fix CubeReader.">
       <created>1568203570012</created>
@@ -177,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568203570012</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Epam task part 1, fix CubeReader (2).">
+      <created>1568203861957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568203861957</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Epam task part 1, fix CubeReader (2).">
+      <created>1568203897651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568203897651</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,12 +209,24 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -199,6 +234,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Epam task part 1, fix CubeReader." />
-    <option name="LAST_COMMIT_MESSAGE" value="Epam task part 1, fix CubeReader." />
+    <MESSAGE value="Epam task part 1, fix CubeReader (2)." />
+    <MESSAGE value="Epam task part 1, change log config, some fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="Epam task part 1, change log config, some fix." />
   </component>
 </project>
