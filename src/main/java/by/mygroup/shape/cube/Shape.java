@@ -1,5 +1,7 @@
 package by.mygroup.shape.cube;
 
+import by.mygroup.exception.CubeException;
+
 public abstract class Shape {
     private long id;
     private Point startPoint;

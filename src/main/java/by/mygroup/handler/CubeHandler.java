@@ -24,7 +24,7 @@ public class CubeHandler {
     public static double calculateVolume(Cube cube) {
         double edge = cube.getCubeEdge();
         double volume = edge*edge*edge;
-        logger.info(String.format("Calculate Surface Area of Cube %d, area = %f", cube.getId(), volume));
+        logger.info(String.format("Calculate Volume of Cube %d, volume = %f", cube.getId(), volume));
         return volume;
     }
 
@@ -49,9 +49,9 @@ public class CubeHandler {
     }
 
     private static double calculateRatio(double firstPoint, double secondPoint) {
-        if (Math.abs(firstPoint + secondPoint) <= Math.abs(firstPoint - secondPoint)) {
-            logger.info("Calculation failed! Cube not cut by plane.");
-            throw new RuntimeException("Cube not cut by plane");
+        if (Math.abs(firstPoint + secondPoint) >= Math.abs(firstPoint - secondPoint)) {
+            logger.info("Cube not cut by plane.");
+            return 0;
         } else {
             firstPoint = Math.abs(firstPoint);
             secondPoint = Math.abs(secondPoint);

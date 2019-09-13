@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task part 1, change log config, some fix.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task part 2, add Warehouse and observers.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/observer/CubeObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/observer/ObservableCube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/warehouse/Warehouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/handler/CubeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/handler/CubeHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Cube.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/handler/CubeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/handler/CubeHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Shape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +28,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -80,38 +84,38 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Cube (1)">
+    <configuration name="BasketCats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.mygroup.BasketCats" />
+      <module name="epam_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.mygroup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.mygroup.CloneTest" />
+      <module name="epam_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.mygroup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Cube (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.mygroup.shape.cube.Cube" />
       <module name="epam_task" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="by.mygroup.shape.cube.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Cube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mygroup.exceptions.shape.Cube" />
-      <module name="epam_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mygroup.exceptions.shape.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CubeReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.mygroup.reader.CubeReader" />
-      <module name="epam_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.mygroup.reader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,10 +161,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Cube (1)" />
+        <item itemvalue="Application.BasketCats" />
+        <item itemvalue="Application.CloneTest" />
         <item itemvalue="TestNG.CubeTests" />
         <item itemvalue="TestNG.CubeTests.readCubeFileTest" />
-        <item itemvalue="Application.Cube" />
-        <item itemvalue="Application.CubeReader" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +181,7 @@
       <workItem from="1568120315048" duration="38293000" />
       <workItem from="1568281730956" duration="783000" />
       <workItem from="1568287085962" duration="11302000" />
-      <workItem from="1568362768850" duration="3513000" />
+      <workItem from="1568362768850" duration="19278000" />
     </task>
     <task id="LOCAL-00001" summary="Epam task part 1, fix CubeReader.">
       <created>1568203570012</created>
@@ -200,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568203897651</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Epam task part 1, change log config, some fix.">
+      <created>1568366296562</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568366296562</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +247,7 @@
     <MESSAGE value="Epam task part 1, fix CubeReader." />
     <MESSAGE value="Epam task part 1, fix CubeReader (2)." />
     <MESSAGE value="Epam task part 1, change log config, some fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Epam task part 1, change log config, some fix." />
+    <MESSAGE value="Epam task part 2, add Warehouse and observers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Epam task part 2, add Warehouse and observers." />
   </component>
 </project>

@@ -1,9 +1,10 @@
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '722' - Point created! Point :Point{id=2145386496, x=1.0, y=1.0, z=0.0}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '725' - Point created! Point :Point{id=-859045887, x=1.0, y=4.2, z=0.0}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '725' - Point created! Point :Point{id=-859045887, x=4.2, y=1.0, z=0.0}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '725' - Point created! Point :Point{id=431489026, x=4.2, y=4.2, z=0.0}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '725' - Point created! Point :Point{id=1500512259, x=1.0, y=1.0, z=3.2}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '726' - Point created! Point :Point{id=-1503920124, x=1.0, y=4.2, z=3.2}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '726' - Point created! Point :Point{id=-1503920124, x=4.2, y=1.0, z=3.2}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Point | (Point.java:18) '726' - Point created! Point :Point{id=-213385211, x=4.2, y=4.2, z=3.2}
-2019-09-13 12:12:41 | [main] | INFO  shape.cube.Cube | (Cube.java:19) '727' - Create cube: Cube{cubeEdge=3.2, cubePoints={DOWN_RIGHT_2=Point{id=431489026, x=4.2, y=4.2, z=0.0}, TOP_RIGHT_1=Point{id=-1503920124, x=4.2, y=1.0, z=3.2}, TOP_LEFT_2=Point{id=-1503920124, x=1.0, y=4.2, z=3.2}, DOWN_LEFT_2=Point{id=-859045887, x=1.0, y=4.2, z=0.0}, DOWN_RIGHT_1=Point{id=-859045887, x=4.2, y=1.0, z=0.0}, TOP_LEFT_1=Point{id=1500512259, x=1.0, y=1.0, z=3.2}, TOP_RIGHT_2=Point{id=-213385211, x=4.2, y=4.2, z=3.2}, DOWN_LEFT_1=Point{id=2145386496, x=1.0, y=1.0, z=0.0}}}
+2019-09-13 16:47:04 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=2146435072, x=-1.0, y=-2.0, z=0.0}
+2019-09-13 16:47:28 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-860880889, x=-1.0, y=1.2000000000000002, z=0.0}
+2019-09-13 16:48:11 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1718091773, x=2.2, y=-2.0, z=0.0}
+2019-09-13 16:48:11 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-430440438, x=2.2, y=1.2000000000000002, z=0.0}
+2019-09-13 16:48:11 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1501560835, x=-1.0, y=-2.0, z=3.2}
+2019-09-13 16:48:11 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1505755126, x=-1.0, y=1.2000000000000002, z=3.2}
+2019-09-13 16:48:11 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1932001286, x=2.2, y=-2.0, z=3.2}
+2019-09-13 16:48:11 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1075314675, x=2.2, y=1.2000000000000002, z=3.2}
+2019-09-13 16:48:11 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:32) - Event, cube : Cube{cubeEdge=3.2, cubePoints={TOP_LEFT_1=Point{id=1501560835, x=-1.0, y=-2.0, z=3.2}, TOP_LEFT_2=Point{id=-1505755126, x=-1.0, y=1.2000000000000002, z=3.2}, DOWN_RIGHT_2=Point{id=-430440438, x=2.2, y=1.2000000000000002, z=0.0}, TOP_RIGHT_1=Point{id=1932001286, x=2.2, y=-2.0, z=3.2}, TOP_RIGHT_2=Point{id=-1075314675, x=2.2, y=1.2000000000000002, z=3.2}, DOWN_LEFT_2=Point{id=-860880889, x=-1.0, y=1.2000000000000002, z=0.0}, DOWN_RIGHT_1=Point{id=-1718091773, x=2.2, y=-2.0, z=0.0}, DOWN_LEFT_1=Point{id=2146435072, x=-1.0, y=-2.0, z=0.0}}}
+2019-09-13 16:48:11 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:20) - Calculate Surface Area of Cube 77, area = 61,440000

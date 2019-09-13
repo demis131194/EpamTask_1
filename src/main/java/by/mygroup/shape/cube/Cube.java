@@ -1,27 +1,48 @@
 package by.mygroup.shape.cube;
 
 import by.mygroup.exception.CubeException;
+import by.mygroup.observer.CubeObserver;
+import by.mygroup.observer.ObservableCube;
+import by.mygroup.warehouse.Warehouse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
-public class Cube extends Shape {
+public class Cube extends Shape implements ObservableCube {
     private static Logger logger = LogManager.getLogger();
     private double cubeEdge;
     private Map<CubePoint, Point> cubePoints = new HashMap<>();
+    private List<CubeObserver> observers = new LinkedList<>();
+
+    {
+        addObserver(Warehouse.getInstance());
+    }
 
     public Cube(Point startPoint, double cubeEdge) throws CubeException {
         super(startPoint);
-        this.cubeEdge = cubeEdge;
-        calculatePoints(startPoint, cubeEdge);
-        super.setId(CubeIdGenerator.generateID(this));
+        init(startPoint, cubeEdge);
+        notifyAll(this);
         logger.info("Create : " + this.toString());
     }
 
     public Cube(long id, Point startPoint, double cubeEdge) throws CubeException {
-        this(startPoint, cubeEdge);
-        checkIsCube(id);
+        super(startPoint);
+        init(startPoint, cubeEdge);
+        if (super.getId() != id) {
+            throw new CubeException("This is not a cube!");
+        }
+        notifyAll(this);
+        logger.info("Create : " + this.toString());
+    }
+
+    private void init(Point startPoint, double cubeEdge) throws CubeException {
+        if (cubeEdge <= 0) {
+            throw new CubeException("Length of cube edge must be > 0. Creating cube failed.");
+        }
+        this.cubeEdge = cubeEdge;
+        calculatePoints(startPoint, cubeEdge);
+        super.setId(CubeIdGenerator.generateID(this));
     }
 
     public double getCubeEdge() {
@@ -30,6 +51,19 @@ public class Cube extends Shape {
 
     public void setCubeEdge(double cubeEdge) {
         this.cubeEdge = cubeEdge;
+        notifyAll(this);
+    }
+
+    @Override
+    public Point getStartPoint() {
+        return super.getStartPoint();
+    }
+
+    @Override
+    public void setStartPoint(Point startPoint) {
+        super.setStartPoint(startPoint);
+        calculatePoints(super.getStartPoint(), cubeEdge);
+        notifyAll(this);
     }
 
     public Map<CubePoint, Point> getCubePoints() {
@@ -38,19 +72,11 @@ public class Cube extends Shape {
 
     public void setCubePoints(Map<CubePoint, Point> cubePoints) {
         this.cubePoints = cubePoints;
-    }
-
-    private void checkIsCube(long id) throws CubeException {
-        if (super.getId() != id) {
-            throw new CubeException("This is not a cube!");
-        }
+        notifyAll(this);
     }
 
     @SuppressWarnings("all")
-    private void calculatePoints(Point startPoint, double cubeEdge) throws CubeException {
-        if (cubeEdge <= 0) {
-            throw new CubeException("Length of cube edge must be > 0. Creating cube failed.");
-        }
+    private void calculatePoints(Point startPoint, double cubeEdge) {
 
         Point downLeft_1 = startPoint;
         Point downLeft_2 = new Point(startPoint.getX(), startPoint.getY() + cubeEdge, startPoint.getZ());
@@ -70,6 +96,23 @@ public class Cube extends Shape {
         cubePoints.put(CubePoint.TOP_LEFT_2, topLeft_2);
         cubePoints.put(CubePoint.TOP_RIGHT_1, topRight_1);
         cubePoints.put(CubePoint.TOP_RIGHT_2, topRight_2);
+    }
+
+    @Override
+    public void addObserver(CubeObserver observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void deleteObserver(CubeObserver observer) {
+        observers.remove(observer);
+    }
+
+    @Override
+    public void notifyAll(Cube cube) {
+        for (CubeObserver observer : observers) {
+            observer.handleEvent(cube);
+        }
     }
 
     @Override
@@ -93,9 +136,5 @@ public class Cube extends Shape {
         sb.append(", cubePoints=").append(cubePoints);
         sb.append('}');
         return sb.toString();
-    }
-
-    public static void main(String[] args) throws Exception {
-        Cube cube = new Cube(new Point(1, 1), 3.2);
     }
 }
