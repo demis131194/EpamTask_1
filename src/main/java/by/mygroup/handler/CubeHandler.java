@@ -55,9 +55,10 @@ public class CubeHandler {
         } else {
             firstPoint = Math.abs(firstPoint);
             secondPoint = Math.abs(secondPoint);
-            double ratio = Math.max(firstPoint / secondPoint, secondPoint / firstPoint);
-            logger.info(String.format("Calculate ratio = %f", ratio));
-            return ratio;
+            float ratio1 = (float) (firstPoint / secondPoint);
+            float ratio2 = (float) (secondPoint / firstPoint);
+            logger.info(String.format("Calculate ratio = %f", Math.max(ratio1, ratio2)));
+            return Math.max(ratio1, ratio2);
         }
     }
 }
