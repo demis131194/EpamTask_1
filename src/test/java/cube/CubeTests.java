@@ -18,11 +18,8 @@ import java.util.List;
 @Test
 public class CubeTests {
     private final Point startPointForCube_1 = new Point(-4.2, 1.3, 4.2);
-    private final Point startPointForCube_2 = new Point(23.2, 54.2, 1);
     private final double cube_edge_1 = 7;
-    private final double cube_edge_2 = 12;
     private final long cube_id_1 = 67108956L;
-    private final long cube_id_2 = 324L;
     private final List<String> linesFromCubeFile = new ArrayList<>();
 
     @BeforeTest
