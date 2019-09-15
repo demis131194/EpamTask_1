@@ -3,7 +3,7 @@ package by.mygroup.shape.cube;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Point {
+public class Point implements Comparable<Point>{
     private static Logger logger = LogManager.getLogger();
     private double x;
     private double y;
@@ -15,7 +15,6 @@ public class Point {
         this.y = y;
         this.z = z;
         id = hashCode();
-        logger.info("Create :" + this.toString());
     }
 
     public Point(double x, double y) {
@@ -48,6 +47,18 @@ public class Point {
 
     public long getId() {
         return id;
+    }
+
+    @Override
+    public int compareTo(Point o) {
+        int result = Double.compare(o.x, this.x);
+        if (result == 0) {
+            result = Double.compare(o.y, this.y);
+            if (result == 0) {
+                result = Double.compare(o.z, this.z);
+            }
+        }
+        return result;
     }
 
     @Override

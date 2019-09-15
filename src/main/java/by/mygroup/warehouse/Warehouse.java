@@ -3,6 +3,8 @@ package by.mygroup.warehouse;
 import by.mygroup.handler.CoordinatePlane;
 import by.mygroup.handler.CubeHandler;
 import by.mygroup.observer.CubeObserver;
+import by.mygroup.repository.CubeRepository;
+import by.mygroup.repository.Repository;
 import by.mygroup.shape.cube.Cube;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,7 +17,7 @@ public class Warehouse implements CubeObserver {
     private static final Warehouse INSTANCE = new Warehouse();
 
     private final Map<Long, CubeWarehouse> warehouse = new HashMap<>();
-
+    private final Repository repository = new CubeRepository();
     private Warehouse() {
     }
 
@@ -23,14 +25,31 @@ public class Warehouse implements CubeObserver {
         return INSTANCE;
     }
 
-    public CubeWarehouse getCubeWarehouseByID(long id) {
-        return warehouse.get(id);
+    public double getVolumeById(long id) {
+        return warehouse.get(id).getVolume();
+    }
+
+    public double getSurfaceArea(long id) {
+        return warehouse.get(id).getSurfaceArea();
+    }
+
+    public double getRatioByX(long id) {
+        return warehouse.get(id).getSectionByPlane(CoordinatePlane.X);
+    }
+
+    public double getRatioByY(long id) {
+        return warehouse.get(id).getSectionByPlane(CoordinatePlane.Y);
+    }
+
+    public Repository getRepository() {
+        return repository;
     }
 
     @Override
     public void handleEvent(Cube cube) {
         logger.trace("Event, cube : " + cube);
         warehouse.putIfAbsent(cube.getId(), new CubeWarehouse());
+        repository.addIfAbsent(cube);
         CubeWarehouse cubeWarehouse = warehouse.get(cube.getId());
 
         cubeWarehouse.surfaceArea = CubeHandler.calculateSurfaceArea(cube);
@@ -53,15 +72,15 @@ public class Warehouse implements CubeObserver {
             }
         }
 
-        public double getSurfaceArea() {
+        double getSurfaceArea() {
             return surfaceArea;
         }
 
-        public double getVolume() {
+        double getVolume() {
             return volume;
         }
 
-        public double getSectionByPlane(CoordinatePlane plane) {
+        double getSectionByPlane(CoordinatePlane plane) {
             return section.get(plane);
         }
 

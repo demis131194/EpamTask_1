@@ -1,16 +1,16 @@
-package cube;
+package cubetest;
 
 import by.mygroup.exception.CubeException;
 import by.mygroup.exception.CubeParseException;
 import by.mygroup.exception.CubeReaderException;
 import by.mygroup.shape.cube.CubeArgumentContainer;
+import cubetest.util.CubeReaderForTest;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import by.mygroup.shape.cube.Cube;
 import by.mygroup.shape.cube.Point;
 import by.mygroup.factory.CubeFactory;
 import by.mygroup.parser.CubeParser;
-import by.mygroup.reader.CubeReader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +32,7 @@ public class CubeTests {
 
     @Test
     public void readCubeFileTest() throws CubeReaderException {
-        List<String> readingLinesFromCube = CubeReader.readLines();
+        List<String> readingLinesFromCube = CubeReaderForTest.readLines();
         Assert.assertEquals(readingLinesFromCube, linesFromCubeFile);
     }
 
@@ -51,13 +51,6 @@ public class CubeTests {
         Cube expectedCube = new Cube(startPointForCube_1, cube_edge_1);
         Cube cube = cubeFactory.create(CubeParser.parse(linesFromCubeFile.get(0)));
         Assert.assertEquals(cube, expectedCube);
-    }
-
-    @Test(expectedExceptions = CubeException.class)
-    public void cubeCreateTestNotCubeException() throws CubeException, CubeParseException {
-        CubeFactory cubeFactory = new CubeFactory();
-        Cube expectedCube = new Cube(startPointForCube_1, cube_edge_1);
-        Cube cube = cubeFactory.create(CubeParser.parse(linesFromCubeFile.get(1)));
     }
 
     @Test(expectedExceptions = CubeException.class)

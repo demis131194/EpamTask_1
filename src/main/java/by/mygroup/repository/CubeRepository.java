@@ -13,7 +13,7 @@ public class CubeRepository implements Repository {
     private Map<Long, Cube> repository = new HashMap<>();
 
     @Override
-    public void add(Cube cube) {
+    public void addIfAbsent(Cube cube) {
         repository.putIfAbsent(cube.getId(), cube);
     }
 
@@ -25,6 +25,11 @@ public class CubeRepository implements Repository {
     @Override
     public void update(Cube cube) {
         repository.put(cube.getId(), cube);
+    }
+
+    @Override
+    public Cube getCubeById(long id) {
+        return repository.get(id);
     }
 
     @Override

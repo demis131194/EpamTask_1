@@ -1,86 +1,17 @@
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1933148157, x=23.2, y=54.2, z=1.0}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.factory.CubeFactory | (CubeFactory.java:14) - Cube factory created.
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1936785413, x=-4.2, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1502347262, x=2.8, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930100732, x=2.8, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643039234, x=-4.2, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=215285764, x=-4.2, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1071120385, x=2.8, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643366915, x=2.8, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:32) - Event, cube : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:20) - Calculate Surface Area of Cube 67108956, area = 294,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:27) - Calculate Volume of Cube 67108956, volume = 343,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = X
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:53) - Cube not cut by plane.
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = Y
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:60) - Calculate ratio = 1,500000
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:42) - Event handel, warehouse : CubeWarehouse{surfaceArea=294.0, volume=343.0, section={X=0.0, Y=1.5}}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Cube | (Cube.java:26) - Create : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.parser.CubeParser | (CubeParser.java:39) - Parsing arguments completed. Line = 67108956 -4.2 1.3 4.2 7
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1936785413, x=-4.2, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1502347262, x=2.8, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930100732, x=2.8, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643039234, x=-4.2, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=215285764, x=-4.2, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1071120385, x=2.8, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643366915, x=2.8, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:32) - Event, cube : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:20) - Calculate Surface Area of Cube 67108956, area = 294,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:27) - Calculate Volume of Cube 67108956, volume = 343,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = X
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:53) - Cube not cut by plane.
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = Y
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:60) - Calculate ratio = 1,500000
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:42) - Event handel, warehouse : CubeWarehouse{surfaceArea=294.0, volume=343.0, section={X=0.0, Y=1.5}}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Cube | (Cube.java:36) - Create : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.factory.CubeFactory | (CubeFactory.java:14) - Cube factory created.
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1936785413, x=-4.2, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1502347262, x=2.8, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930100732, x=2.8, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643039234, x=-4.2, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=215285764, x=-4.2, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1071120385, x=2.8, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643366915, x=2.8, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:32) - Event, cube : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:20) - Calculate Surface Area of Cube 67108956, area = 294,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:27) - Calculate Volume of Cube 67108956, volume = 343,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = X
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:53) - Cube not cut by plane.
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = Y
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:60) - Calculate ratio = 1,500000
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:42) - Event handel, warehouse : CubeWarehouse{surfaceArea=294.0, volume=343.0, section={X=0.0, Y=1.5}}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Cube | (Cube.java:26) - Create : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.parser.CubeParser | (CubeParser.java:39) - Parsing arguments completed. Line = 67108956 -4.2 1.3 4.2 -2
-2019-09-13 18:20:36 | [main] | INFO  mygroup.factory.CubeFactory | (CubeFactory.java:14) - Cube factory created.
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1936785413, x=-4.2, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1502347262, x=2.8, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930100732, x=2.8, y=8.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643039234, x=-4.2, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=215285764, x=-4.2, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1071120385, x=2.8, y=1.3, z=11.2}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=643366915, x=2.8, y=8.3, z=11.2}
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:32) - Event, cube : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:20) - Calculate Surface Area of Cube 67108956, area = 294,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:27) - Calculate Volume of Cube 67108956, volume = 343,000000
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = X
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:53) - Cube not cut by plane.
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 67108956, plane = Y
-2019-09-13 18:20:36 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:60) - Calculate ratio = 1,500000
-2019-09-13 18:20:36 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:42) - Event handel, warehouse : CubeWarehouse{surfaceArea=294.0, volume=343.0, section={X=0.0, Y=1.5}}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Cube | (Cube.java:26) - Create : Cube{cubeEdge=7.0, cubePoints={DOWN_RIGHT_2=Point{id=-1930100732, x=2.8, y=8.3, z=4.2}, TOP_LEFT_1=Point{id=643039234, x=-4.2, y=1.3, z=11.2}, DOWN_LEFT_1=Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}, DOWN_RIGHT_1=Point{id=-1502347262, x=2.8, y=1.3, z=4.2}, TOP_RIGHT_2=Point{id=643366915, x=2.8, y=8.3, z=11.2}, TOP_LEFT_2=Point{id=215285764, x=-4.2, y=8.3, z=11.2}, DOWN_LEFT_2=Point{id=1936785413, x=-4.2, y=8.3, z=4.2}, TOP_RIGHT_1=Point{id=1071120385, x=2.8, y=1.3, z=11.2}}}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1933148157, x=23.2, y=54.2, z=1.0}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.parser.CubeParser | (CubeParser.java:39) - Parsing arguments completed. Line = 324 23.2 54.2 1 12
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1066418177, x=23.2, y=66.2, z=1.0}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-207978490, x=35.2, y=54.2, z=1.0}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1503379452, x=35.2, y=66.2, z=1.0}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1929347069, x=23.2, y=54.2, z=13.0}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=1070219265, x=23.2, y=66.2, z=13.0}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-204177402, x=35.2, y=54.2, z=13.0}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1499578364, x=35.2, y=66.2, z=13.0}
-2019-09-13 18:20:36 | [main] | INFO  shape.cube.Point | (Point.java:18) - Create :Point{id=-1930428413, x=-4.2, y=1.3, z=4.2}
-2019-09-13 18:20:36 | [main] | INFO  mygroup.parser.CubeParser | (CubeParser.java:39) - Parsing arguments completed. Line = 67108956 -4.2 1.3 4.2 7
-2019-09-13 18:20:36 | [main] | INFO  mygroup.reader.CubeReader | (CubeReader.java:23) - Starting reading lines from cube.txt
-2019-09-13 18:20:36 | [main] | INFO  mygroup.reader.CubeReader | (CubeReader.java:33) - Reading file cube.txt completed.
+2019-09-15 15:29:54 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:50) - Event, cube : Cube{cubeEdge=4.0, cubePoints={TOP_RIGHT_2=Point{id=-1070858240, x=3.0, y=5.0, z=4.0}, DOWN_LEFT_2=Point{id=262144, x=-1.0, y=5.0, z=0.0}, DOWN_LEFT_1=Point{id=-2097152, x=-1.0, y=1.0, z=0.0}, DOWN_RIGHT_1=Point{id=2146959360, x=3.0, y=1.0, z=0.0}, TOP_LEFT_1=Point{id=1072693248, x=-1.0, y=1.0, z=4.0}, DOWN_RIGHT_2=Point{id=-2145648640, x=3.0, y=5.0, z=0.0}, TOP_RIGHT_1=Point{id=-1073217536, x=3.0, y=1.0, z=4.0}, TOP_LEFT_2=Point{id=1075052544, x=-1.0, y=5.0, z=4.0}}}
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:20) - Calculate Surface Area of Cube 1, area = 96,000000
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:27) - Calculate Volume of Cube 1, volume = 64,000000
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 1, plane = X
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:53) - Cube not cut by plane.
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 1, plane = Y
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:60) - Calculate ratio = 3,000000
+2019-09-15 15:29:54 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:61) - Event handel, warehouse : CubeWarehouse{surfaceArea=96.0, volume=64.0, section={Y=3.0, X=0.0}}
+2019-09-15 15:29:54 | [main] | INFO  shape.cube.Cube | (Cube.java:27) - Create : Cube{cubeEdge=4.0, cubePoints={TOP_RIGHT_2=Point{id=-1070858240, x=3.0, y=5.0, z=4.0}, DOWN_LEFT_2=Point{id=262144, x=-1.0, y=5.0, z=0.0}, DOWN_LEFT_1=Point{id=-2097152, x=-1.0, y=1.0, z=0.0}, DOWN_RIGHT_1=Point{id=2146959360, x=3.0, y=1.0, z=0.0}, TOP_LEFT_1=Point{id=1072693248, x=-1.0, y=1.0, z=4.0}, DOWN_RIGHT_2=Point{id=-2145648640, x=3.0, y=5.0, z=0.0}, TOP_RIGHT_1=Point{id=-1073217536, x=3.0, y=1.0, z=4.0}, TOP_LEFT_2=Point{id=1075052544, x=-1.0, y=5.0, z=4.0}}}
+2019-09-15 15:29:54 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:50) - Event, cube : Cube{cubeEdge=4.0, cubePoints={TOP_RIGHT_2=Point{id=-1072693248, x=2.0, y=2.0, z=4.0}, DOWN_LEFT_2=Point{id=0, x=-2.0, y=2.0, z=0.0}, DOWN_LEFT_1=Point{id=-2147483648, x=-2.0, y=-2.0, z=0.0}, DOWN_RIGHT_1=Point{id=0, x=2.0, y=-2.0, z=0.0}, TOP_LEFT_1=Point{id=-1072693248, x=-2.0, y=-2.0, z=4.0}, DOWN_RIGHT_2=Point{id=-2147483648, x=2.0, y=2.0, z=0.0}, TOP_RIGHT_1=Point{id=1074790400, x=2.0, y=-2.0, z=4.0}, TOP_LEFT_2=Point{id=1074790400, x=-2.0, y=2.0, z=4.0}}}
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:20) - Calculate Surface Area of Cube 1, area = 96,000000
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:27) - Calculate Volume of Cube 1, volume = 64,000000
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 1, plane = X
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:60) - Calculate ratio = 1,000000
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:36) - Calculate Section By CoordinatePlane Cube id = 1, plane = Y
+2019-09-15 15:29:54 | [main] | INFO  mygroup.handler.CubeHandler | (CubeHandler.java:60) - Calculate ratio = 1,000000
+2019-09-15 15:29:54 | [main] | TRACE mygroup.warehouse.Warehouse | (Warehouse.java:61) - Event handel, warehouse : CubeWarehouse{surfaceArea=96.0, volume=64.0, section={Y=1.0, X=1.0}}

@@ -1,4 +1,4 @@
-package cube;
+package cubetest;
 
 import by.mygroup.exception.CubeException;
 import by.mygroup.handler.CoordinatePlane;

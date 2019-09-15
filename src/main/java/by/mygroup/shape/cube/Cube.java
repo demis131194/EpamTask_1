@@ -22,6 +22,7 @@ public class Cube extends Shape implements ObservableCube {
     public Cube(Point startPoint, double cubeEdge) throws CubeException {
         super(startPoint);
         init(startPoint, cubeEdge);
+        super.setId(CubeIdGenerator.generateID());
         notifyAll(this);
         logger.info("Create : " + this.toString());
     }
@@ -29,9 +30,7 @@ public class Cube extends Shape implements ObservableCube {
     public Cube(long id, Point startPoint, double cubeEdge) throws CubeException {
         super(startPoint);
         init(startPoint, cubeEdge);
-        if (super.getId() != id) {
-            throw new CubeException("This is not a cube!");
-        }
+        super.setId(id);
         notifyAll(this);
         logger.info("Create : " + this.toString());
     }
@@ -42,7 +41,6 @@ public class Cube extends Shape implements ObservableCube {
         }
         this.cubeEdge = cubeEdge;
         calculatePoints(startPoint, cubeEdge);
-        super.setId(CubeIdGenerator.generateID(this));
     }
 
     public double getCubeEdge() {
@@ -68,11 +66,6 @@ public class Cube extends Shape implements ObservableCube {
 
     public Map<CubePoint, Point> getCubePoints() {
         return cubePoints;
-    }
-
-    public void setCubePoints(Map<CubePoint, Point> cubePoints) {
-        this.cubePoints = cubePoints;
-        notifyAll(this);
     }
 
     @SuppressWarnings("all")
