@@ -27,6 +27,7 @@ public class WarehouseTests {
         List<Cube> actualCubes = warehouse.getRepository().selectAll();
         actualCubes.sort(cubeComparator);
         Assert.assertEquals(expectedCubes, actualCubes);
+        warehouse.clean();
     }
 
     @Test
@@ -43,6 +44,7 @@ public class WarehouseTests {
         List<Cube> actualCubes = warehouse.getRepository().selectAll();
         actualCubes.sort(cubeComparator);
         Assert.assertEquals(expectedCubes, actualCubes);
+        warehouse.clean();
     }
 
     public void updateSurfAreaAndVolumeCubeWarehouseTest() throws CubeException {
@@ -60,6 +62,7 @@ public class WarehouseTests {
         cube.setCubeEdge(8);
         Assert.assertEquals(warehouse.getSurfaceArea(cube.getId()), surfaceAreaAfter);
         Assert.assertEquals(warehouse.getVolumeById(cube.getId()), volumeAfter);
+        warehouse.clean();
     }
 
     public void updateRatioCubeWarehouseTest() throws CubeException {
@@ -76,5 +79,6 @@ public class WarehouseTests {
         cube.setStartPoint(new Point(-2, -2));
         Assert.assertEquals(warehouse.getRatioByX(cube.getId()), ratioXAfter);
         Assert.assertEquals(warehouse.getRatioByY(cube.getId()), ratioYAfter);
+        warehouse.clean();
     }
 }

@@ -45,6 +45,13 @@ public class Warehouse implements CubeObserver {
         return repository;
     }
 
+    public void clean() {
+        warehouse.clear();
+        for (Cube cube : repository.selectAll()) {
+            repository.remove(cube);
+        }
+    }
+
     @Override
     public void handleEvent(Cube cube) {
         logger.trace("Event, cube : " + cube);

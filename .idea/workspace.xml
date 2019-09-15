@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task part 2, add Test for CubeHandler&#10;.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/comparator/cube/CubeEdgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/comparator/cube/CubeIdComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/comparator/cube/CubeStartPointComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cubetest/WarehouseTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cubetest/util/CubeReaderForTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/cubes.txt" afterDir="false" />
+    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/observer/CubeObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/observer/CubeObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/CubeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/CubeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Cube.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/CubeIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/CubeIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/mygroup/warehouse/Warehouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cube/CubeHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cubetest/CubeHandlerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cube/CubeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cubetest/CubeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/CubeIdGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/CubeIdGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cubetest/WarehouseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cubetest/WarehouseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/epam_task.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/warehouse/Warehouse$CubeWarehouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/warehouse/Warehouse$CubeWarehouse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/warehouse/Warehouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/mygroup/warehouse/Warehouse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cube/CubeHandlerTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cube/CubeTests.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +26,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -98,7 +81,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.WarehouseTests.updateRatioCubeWarehouseTest">
+  <component name="RunManager" selected="TestNG.CubeHandlerTests">
+    <configuration name="CubeHandlerTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="epam_task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cubetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cubetest" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.CubeHandlerTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CubeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="epam_task" />
       <extension name="coverage">
@@ -107,7 +107,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cube" />
+      <option name="PACKAGE_NAME" value="cubetest" />
       <option name="MAIN_CLASS_NAME" value="cubetest.CubeTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -133,24 +133,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WarehouseTests.addCubeInRepositoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="epam_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cubetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.WarehouseTests" />
-      <option name="METHOD_NAME" value="addCubeInRepositoryTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WarehouseTests.deleteCubeFromRepositoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="epam_task" />
       <extension name="coverage">
@@ -159,7 +141,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cube" />
+      <option name="PACKAGE_NAME" value="cubetest" />
       <option name="MAIN_CLASS_NAME" value="cubetest.WarehouseTests" />
       <option name="METHOD_NAME" value="deleteCubeFromRepositoryTest" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -187,38 +169,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WarehouseTests.updateSurfAreaAndVolumeCubeWarehouseTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="epam_task" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cubetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.WarehouseTests" />
-      <option name="METHOD_NAME" value="updateSurfAreaAndVolumeCubeWarehouseTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG.CubeTests" />
-      <item itemvalue="TestNG.WarehouseTests.addCubeInRepositoryTest" />
       <item itemvalue="TestNG.WarehouseTests" />
-      <item itemvalue="TestNG.WarehouseTests.updateSurfAreaAndVolumeCubeWarehouseTest" />
       <item itemvalue="TestNG.WarehouseTests.updateRatioCubeWarehouseTest" />
+      <item itemvalue="TestNG.CubeHandlerTests" />
+      <item itemvalue="TestNG.WarehouseTests.deleteCubeFromRepositoryTest" />
+      <item itemvalue="TestNG.CubeTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WarehouseTests.updateRatioCubeWarehouseTest" />
-        <item itemvalue="TestNG.WarehouseTests.updateSurfAreaAndVolumeCubeWarehouseTest" />
+        <item itemvalue="TestNG.CubeHandlerTests" />
         <item itemvalue="TestNG.CubeTests" />
         <item itemvalue="TestNG.WarehouseTests" />
-        <item itemvalue="TestNG.WarehouseTests.addCubeInRepositoryTest" />
+        <item itemvalue="TestNG.WarehouseTests.deleteCubeFromRepositoryTest" />
+        <item itemvalue="TestNG.WarehouseTests.updateRatioCubeWarehouseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +291,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/cubetest/WarehouseTests.java</url>
-          <line>65</line>
+          <line>68</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
