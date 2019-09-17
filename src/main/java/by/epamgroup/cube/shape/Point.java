@@ -5,10 +5,11 @@ import org.apache.logging.log4j.Logger;
 
 public class Point implements Comparable<Point>{
     private static Logger logger = LogManager.getLogger();
+    private long id;
     private double x;
     private double y;
     private double z;
-    private long id;
+
 
     public Point(double x, double y, double z) {
         this.x = x;

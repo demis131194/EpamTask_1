@@ -129,8 +129,10 @@ public class Cube extends Shape implements ObservableCube {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Cube{");
-        sb.append("cubeEdge=").append(cubeEdge);
+        sb.append("cube Id=").append(super.getId());
+        sb.append(", cubeEdge=").append(cubeEdge);
         sb.append(", cubePoints=").append(cubePoints);
+        sb.append(", observers=").append(observers);
         sb.append('}');
         return sb.toString();
     }

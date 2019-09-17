@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Warehouse {
     private static final Logger logger = LogManager.getLogger();
@@ -81,6 +82,21 @@ public class Warehouse {
 
         public void setSectionByPlane(CoordinatePlane plane, double ratio) {
             section.put(plane, ratio);
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            CubeParameters that = (CubeParameters) o;
+            return Double.compare(that.surfaceArea, surfaceArea) == 0 &&
+                    Double.compare(that.volume, volume) == 0 &&
+                    Objects.equals(section, that.section);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(surfaceArea, volume, section);
         }
 
         @Override

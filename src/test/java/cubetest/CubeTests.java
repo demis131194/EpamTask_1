@@ -3,8 +3,8 @@ package cubetest;
 import by.epamgroup.cube.exception.CubeException;
 import by.epamgroup.cube.exception.CubeParseException;
 import by.epamgroup.cube.exception.CubeReaderException;
-import by.epamgroup.cube.reader.CubeReader;
 import by.epamgroup.cube.shape.CubeArgumentContainer;
+import cubetest.util.CubeReaderTest;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import by.epamgroup.cube.shape.Cube;
@@ -32,7 +32,7 @@ public class CubeTests {
         linesFromCubeFile.add("120 -4.2 1.3 4.2 -2");
         linesFromCubeFile.add("324 23.2 t4.2 1 12");
 
-        List<String> readingLinesFromCube = CubeReader.readLines();
+        List<String> readingLinesFromCube = CubeReaderTest.readLines();
         Assert.assertEquals(readingLinesFromCube, linesFromCubeFile);
     }
 

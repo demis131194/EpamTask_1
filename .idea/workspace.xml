@@ -1,72 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task done (rest some test).">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/observer/CubeObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/observer/ObservableCube.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/repository/specification/EdgeRangeSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/util/CubeIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cubetest/RepositoryTest.java" afterDir="false" />
+    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeXComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeYComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeZComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cubetest/util/CubeReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cubes/testcubes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epam_task.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/comparator/cube/CubeEdgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeEdgeComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/comparator/cube/CubeIdComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeIdComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/comparator/cube/CubeStartPointComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeStartPointComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/exception/CubeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/exception/CubeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/exception/CubeParseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/exception/CubeParseException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/exception/CubeReaderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/exception/CubeReaderException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/factory/CubeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/factory/CubeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/handler/CoordinatePlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/handler/CoordinatePlane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/handler/CubeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/handler/CubeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/observer/CubeObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/observer/ObservableCube.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/parser/CubeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/parser/CubeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/reader/CubeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/reader/CubeReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/CubeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/repository/CubeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/specification/EdgeCubeSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/repository/specification/EdgeCubeSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/specification/IdCubeSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/repository/specification/IdCubeSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/specification/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/repository/specification/Specification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/repository/specification/StartPointCubeSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/repository/specification/StartPointCubeSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Cube.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/CubeArgumentContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/CubeArgumentContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/CubeIdGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/CubePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/CubePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/shape/cube/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/mygroup/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/warehouse/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/handler/CubeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/handler/CubeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Cube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/warehouse/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/warehouse/Warehouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/shapes/cubes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shape/cubes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cubetest/CubeHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cubetest/CubeHandlerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cubetest/CubeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cubetest/CubeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cubetest/WarehouseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cubetest/WarehouseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cubetest/util/CubeReaderForTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/cubes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/exception/CubeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/exception/CubeParseException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/exception/CubeReaderException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/factory/CubeFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/handler/CoordinatePlane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/handler/CubeHandler$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/handler/CubeHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/observer/CubeObserver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/observer/ObservableCube.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/parser/CubeParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/reader/CubeReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Cube.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/CubeArgumentContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/CubeIdGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/CubePoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/shape/cube/Shape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/warehouse/Warehouse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/warehouse/Warehouse$CubeWarehouse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/mygroup/warehouse/Warehouse.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shapes/cubes.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,25 +57,31 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568403914973" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources" />
-      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task" />
-      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources\shapes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\test\java\resources" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="by.mygroup.exception" />
       <recent name="exceptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Demis-PC\IdeaProjects\cube\src\test\java\resources" />
+      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\test\java\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Demis-PC\IdeaProjects\cube\src\test\resources\cubes" />
+      <recent name="C:\Users\Demis-PC\IdeaProjects\cube\src\test" />
+      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources" />
+      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task" />
+      <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\main\resources\shapes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -139,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.RepositoryTest">
+  <component name="RunManager" selected="TestNG.WarehouseTests">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="cube" />
       <option name="VM_PARAMETERS" />
@@ -187,6 +144,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CubeTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cubetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cubetest" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.CubeTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CubeTests.readCubeFileTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cubetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cubetest" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.CubeTests" />
+      <option name="METHOD_NAME" value="readCubeFileTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RepositoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
@@ -204,7 +196,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryTest.IdSpecificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WarehouseTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
         <pattern>
@@ -213,16 +205,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.RepositoryTest" />
-      <option name="METHOD_NAME" value="IdSpecificationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.WarehouseTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryTest.edgeRangeSpecificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WarehouseTests.updateWarehouseTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
         <pattern>
@@ -231,44 +222,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.RepositoryTest" />
-      <option name="METHOD_NAME" value="edgeRangeSpecificationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepositoryTest.edgeSpecificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cube" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cubetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.RepositoryTest" />
-      <option name="METHOD_NAME" value="edgeSpecificationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepositoryTest.startPointSpecificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cube" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cubetest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.RepositoryTest" />
-      <option name="METHOD_NAME" value="startPointSpecificationTest" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.WarehouseTests" />
+      <option name="METHOD_NAME" value="updateWarehouseTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -278,18 +233,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.RepositoryTest" />
-      <item itemvalue="TestNG.RepositoryTest.startPointSpecificationTest" />
-      <item itemvalue="TestNG.RepositoryTest.IdSpecificationTest" />
-      <item itemvalue="TestNG.RepositoryTest.edgeSpecificationTest" />
-      <item itemvalue="TestNG.RepositoryTest.edgeRangeSpecificationTest" />
+      <item itemvalue="TestNG.CubeTests" />
+      <item itemvalue="TestNG.CubeTests.readCubeFileTest" />
+      <item itemvalue="TestNG.WarehouseTests" />
+      <item itemvalue="TestNG.WarehouseTests.updateWarehouseTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WarehouseTests" />
+        <item itemvalue="TestNG.WarehouseTests.updateWarehouseTest" />
         <item itemvalue="TestNG.RepositoryTest" />
-        <item itemvalue="TestNG.RepositoryTest.edgeRangeSpecificationTest" />
-        <item itemvalue="TestNG.RepositoryTest.edgeSpecificationTest" />
-        <item itemvalue="TestNG.RepositoryTest.IdSpecificationTest" />
-        <item itemvalue="TestNG.RepositoryTest.startPointSpecificationTest" />
+        <item itemvalue="TestNG.CubeTests" />
+        <item itemvalue="TestNG.CubeTests.readCubeFileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +266,7 @@
       <workItem from="1568543332858" duration="7658000" />
       <workItem from="1568613888884" duration="725000" />
       <workItem from="1568617928196" duration="3224000" />
-      <workItem from="1568709223275" duration="8484000" />
+      <workItem from="1568709223275" duration="16551000" />
     </task>
     <task id="LOCAL-00001" summary="Epam task part 1, fix CubeReader.">
       <created>1568203570012</created>
@@ -362,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568552220487</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Epam task (part 2), some fix, fix tests, add repository test.">
+      <created>1568719334036</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568719334036</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +364,8 @@
     <MESSAGE value="Epam task part 2, add Test for CubeHandler&#10;." />
     <MESSAGE value="." />
     <MESSAGE value="Epam task done (rest some test)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Epam task done (rest some test)." />
+    <MESSAGE value="Epam task (part 2), some fix, fix tests, add repository test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Epam task (part 2), some fix, fix tests, add repository test." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
