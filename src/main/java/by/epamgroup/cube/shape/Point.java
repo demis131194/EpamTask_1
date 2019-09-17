@@ -52,11 +52,11 @@ public class Point implements Comparable<Point>{
 
     @Override
     public int compareTo(Point o) {
-        int result = Double.compare(o.x, this.x);
+        int result = Double.compare(this.x, o.x);
         if (result == 0) {
-            result = Double.compare(o.y, this.y);
+            result = Double.compare(this.y, o.y);
             if (result == 0) {
-                result = Double.compare(o.z, this.z);
+                result = Double.compare(this.z, o.z);
             }
         }
         return result;
