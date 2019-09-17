@@ -78,19 +78,19 @@ public class Cube extends Shape implements ObservableCube {
     private void calculatePoints(Point startPoint, double cubeEdge) {
 
         Point downLeft_1 = startPoint;
-        BigDecimal startX = new BigDecimal(startPoint.getX() + cubeEdge).setScale(5, RoundingMode.HALF_UP);
-        BigDecimal startY = new BigDecimal(startPoint.getY() + cubeEdge).setScale(5, RoundingMode.HALF_UP);
-        BigDecimal startZ = new BigDecimal(startPoint.getZ() + cubeEdge).setScale(5, RoundingMode.HALF_UP);
+        BigDecimal startXWithEdge = new BigDecimal(startPoint.getX() + cubeEdge).setScale(5, RoundingMode.HALF_UP);
+        BigDecimal startYWithEdge = new BigDecimal(startPoint.getY() + cubeEdge).setScale(5, RoundingMode.HALF_UP);
+        BigDecimal startZWithEdge = new BigDecimal(startPoint.getZ() + cubeEdge).setScale(5, RoundingMode.HALF_UP);
 
 
-        Point downLeft_2 = new Point(startPoint.getX(), startY.doubleValue(), startPoint.getZ());
-        Point downRight_1 = new Point(startX.doubleValue(), startPoint.getY(), startPoint.getZ());
-        Point downRight_2 = new Point(startX.doubleValue(), startY.doubleValue(), startPoint.getZ());
+        Point downLeft_2 = new Point(startPoint.getX(), startYWithEdge.doubleValue(), startPoint.getZ());
+        Point downRight_1 = new Point(startXWithEdge.doubleValue(), startPoint.getY(), startPoint.getZ());
+        Point downRight_2 = new Point(startXWithEdge.doubleValue(), startYWithEdge.doubleValue(), startPoint.getZ());
 
-        Point topLeft_1 = new Point(startPoint.getX(), startPoint.getY(), startZ.doubleValue());
-        Point topLeft_2 = new Point(startPoint.getX(), startY.doubleValue(), startZ.doubleValue());
-        Point topRight_1 = new Point(startX.doubleValue(), startPoint.getY(), startZ.doubleValue());
-        Point topRight_2 = new Point(startPoint.getX(), startPoint.getY(), startZ.doubleValue());
+        Point topLeft_1 = new Point(startPoint.getX(), startPoint.getY(), startZWithEdge.doubleValue());
+        Point topLeft_2 = new Point(startPoint.getX(), startYWithEdge.doubleValue(), startZWithEdge.doubleValue());
+        Point topRight_1 = new Point(startXWithEdge.doubleValue(), startPoint.getY(), startZWithEdge.doubleValue());
+        Point topRight_2 = new Point(startXWithEdge.doubleValue(), startYWithEdge.doubleValue(), startZWithEdge.doubleValue());
 
         cubePoints.put(CubePoint.DOWN_LEFT_1, downLeft_1);
         cubePoints.put(CubePoint.DOWN_LEFT_2, downLeft_2);

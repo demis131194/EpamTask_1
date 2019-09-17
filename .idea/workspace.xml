@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cubetest/ComparatorTests.java" afterDir="false" />
+    <list default="true" id="b21e14cb-12af-4593-a719-d358ec8d1018" name="Default Changelist" comment="Epam task (part 2), fix calculation - use BigDecimal instead double.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeXComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeXComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeYComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeYComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeZComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/comparator/CubeZComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epamgroup/cube/shape/Cube.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log/logfile.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,6 +74,9 @@
       <recent name="C:\Users\Demis-PC\IdeaProjects\cube\src\test\java\resources" />
       <recent name="C:\Users\Demis-PC\IdeaProjects\epam_task\src\test\java\resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="util" />
     </key>
@@ -88,55 +100,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ComparatorTests">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="cube" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="cube" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComparatorTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CubeTests">
+    <configuration name="ComparatorTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparatorTests.XComparatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CubeHandlerTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
         <pattern>
@@ -162,16 +127,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.ComparatorTests" />
-      <option name="METHOD_NAME" value="XComparatorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.CubeHandlerTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparatorTests.YComparatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CubeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
         <pattern>
@@ -180,16 +144,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.ComparatorTests" />
-      <option name="METHOD_NAME" value="YComparatorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.CubeTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparatorTests.ZComparatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RepositoryTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
         <pattern>
@@ -198,16 +161,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.ComparatorTests" />
-      <option name="METHOD_NAME" value="ZComparatorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.RepositoryTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparatorTests.startPointComparatorTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WarehouseTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cube" />
       <extension name="coverage">
         <pattern>
@@ -216,9 +178,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cubetest" />
-      <option name="MAIN_CLASS_NAME" value="cubetest.ComparatorTests" />
-      <option name="METHOD_NAME" value="startPointComparatorTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="cubetest.WarehouseTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -226,19 +187,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.ComparatorTests.startPointComparatorTest" />
-      <item itemvalue="TestNG.ComparatorTests.XComparatorTest" />
-      <item itemvalue="TestNG.ComparatorTests.YComparatorTest" />
-      <item itemvalue="TestNG.ComparatorTests.ZComparatorTest" />
-      <item itemvalue="TestNG.ComparatorTests" />
+      <item itemvalue="TestNG.ComparatorTests (1)" />
+      <item itemvalue="TestNG.CubeHandlerTests" />
+      <item itemvalue="TestNG.CubeTests" />
+      <item itemvalue="TestNG.RepositoryTest" />
+      <item itemvalue="TestNG.WarehouseTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ComparatorTests" />
-        <item itemvalue="TestNG.ComparatorTests.ZComparatorTest" />
-        <item itemvalue="TestNG.ComparatorTests.YComparatorTest" />
-        <item itemvalue="TestNG.ComparatorTests.XComparatorTest" />
-        <item itemvalue="TestNG.ComparatorTests.startPointComparatorTest" />
+        <item itemvalue="TestNG.CubeTests" />
+        <item itemvalue="TestNG.WarehouseTests" />
+        <item itemvalue="TestNG.RepositoryTest" />
+        <item itemvalue="TestNG.CubeHandlerTests" />
+        <item itemvalue="TestNG.ComparatorTests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +221,9 @@
       <workItem from="1568543332858" duration="7658000" />
       <workItem from="1568613888884" duration="725000" />
       <workItem from="1568617928196" duration="3224000" />
-      <workItem from="1568709223275" duration="19364000" />
+      <workItem from="1568709223275" duration="20312000" />
+      <workItem from="1568731139453" duration="1094000" />
+      <workItem from="1568732333809" duration="402000" />
     </task>
     <task id="LOCAL-00001" summary="Epam task part 1, fix CubeReader.">
       <created>1568203570012</created>
@@ -325,7 +288,28 @@
       <option name="project" value="LOCAL" />
       <updated>1568727294642</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Epam task (part 2), add Warehouse tests.">
+      <created>1568730090959</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568730090959</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Epam task (part 2), add Comparator tests.">
+      <created>1568730208225</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568730208225</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Epam task (part 2), fix calculation - use BigDecimal instead double.">
+      <created>1568732201550</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1568732201550</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,27 +351,8 @@
     <MESSAGE value="Epam task done (rest some test)." />
     <MESSAGE value="Epam task (part 2), some fix, fix tests, add repository test." />
     <MESSAGE value="Epam task (part 2), add Warehouse tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Epam task (part 2), add Warehouse tests." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cubetest/RepositoryTest.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cubetest/RepositoryTest.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/cubetest/RepositoryTest.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Epam task (part 2), add Comparator tests." />
+    <MESSAGE value="Epam task (part 2), fix calculation - use BigDecimal instead double." />
+    <option name="LAST_COMMIT_MESSAGE" value="Epam task (part 2), fix calculation - use BigDecimal instead double." />
   </component>
 </project>
