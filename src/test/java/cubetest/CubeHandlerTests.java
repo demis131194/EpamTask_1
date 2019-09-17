@@ -1,10 +1,10 @@
 package cubetest;
 
-import by.mygroup.exception.CubeException;
-import by.mygroup.handler.CoordinatePlane;
-import by.mygroup.handler.CubeHandler;
-import by.mygroup.shape.cube.Cube;
-import by.mygroup.shape.cube.Point;
+import by.epamgroup.cube.exception.CubeException;
+import by.epamgroup.cube.handler.CoordinatePlane;
+import by.epamgroup.cube.handler.CubeHandler;
+import by.epamgroup.cube.shape.Cube;
+import by.epamgroup.cube.shape.Point;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -12,17 +12,20 @@ import org.testng.annotations.Test;
 @Test
 public class CubeHandlerTests {
     private Cube cube;
+    private final Point START_POINT = new Point(-4.2, 1.3, 4.2);
+    private final double CUBE_EDGE = 7;
+
 
     @BeforeTest
     public void init() throws CubeException {
-        cube = new Cube(new Point(-4.2, 1.3, 4.2), 7);
+        cube = new Cube(START_POINT, CUBE_EDGE);
     }
 
     @Test
     public void calculateSurfaceAreaTest() {
-        double surfaceArea = CubeHandler.calculateSurfaceArea(cube);
+        double actualSurfaceArea = CubeHandler.calculateSurfaceArea(cube);
         double expectedSurfaceArea = 294.0;
-        Assert.assertEquals(surfaceArea, expectedSurfaceArea);
+        Assert.assertEquals(actualSurfaceArea, expectedSurfaceArea);
     }
 
     @Test
@@ -36,10 +39,10 @@ public class CubeHandlerTests {
     public void calculateRatioTest() {
         double ratioX = CubeHandler.calculateSectionByCoordinatePlane(cube, CoordinatePlane.X);
         double ratioY = CubeHandler.calculateSectionByCoordinatePlane(cube, CoordinatePlane.Y);
-        System.out.println(cube);
         double expectedRatioByXPlane = 0;
-        Assert.assertEquals(ratioX, expectedRatioByXPlane);
         double expectedRatioByYPlane = 1.5;
+
+        Assert.assertEquals(ratioX, expectedRatioByXPlane);
         Assert.assertEquals(ratioY, expectedRatioByYPlane);
     }
 }
